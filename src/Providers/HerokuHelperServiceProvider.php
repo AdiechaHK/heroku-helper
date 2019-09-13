@@ -1,5 +1,5 @@
 <?php
-namespace HK\HerokuHelper\Providers;
+namespace AdiechaHK\HerokuHelper\Providers;
 use Illuminate\Support\ServiceProvider;
 class HerokuHelperServiceProvider extends ServiceProvider {
 
