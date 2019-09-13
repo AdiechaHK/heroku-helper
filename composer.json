@@ -1,5 +1,5 @@
 {
-    "name": "hk/heroku-helper",
+    "name": "adiechahk/heroku-helper",
     "description": "Commands that helps to deal with heroku using laravel app.",
     "type": "library",
     "license": "MIT",
