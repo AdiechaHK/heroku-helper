@@ -1,0 +1,21 @@
+{
+    "name": "hk/heroku-helper",
+    "description": "Commands that helps to deal with heroku using laravel app.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Harikrushna V. Adiecha",
+            "email": "adiechahari@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HK\\HerokuHelper": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^7.0@dev"
+    }
+}
