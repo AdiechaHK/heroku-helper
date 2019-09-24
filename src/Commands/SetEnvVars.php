@@ -36,7 +36,28 @@ class SetEnvVars extends Command
      */
     public function handle()
     {
-    	$this->info("Yes command get called.");
-    }
 
+        $app = config('heroku.app');
+
+        $this->info("Verifying provided '$app'...");
+        $apps = Heroku::apps();
+
+        if (!in_array($app, $apps))
+        {
+            $this->error("Invalid app '$app'.");
+            return;
+        }
+        $this->info("'$app' verified.");
+
+    	if (!$this->option('no-reset'))
+        {
+            $this->info("Reseting all environment variables");
+            Heroku::resetConfig($app);
+            $this->info("Reset all variable successfully.");
+        }
+
+        $this->info("Setting new variables.");
+        Heroku::setConfig($app, config('heroku.vars'));
+        $this->info("Set variables");
+    }
 }

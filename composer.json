@@ -26,5 +26,15 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^8.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdiechaHK\\HerokuHelper\\Providers\\HerokuHelperServiceProvider"
+            ],
+            "aliases": {
+                // "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            }
+        }
     }
 }
