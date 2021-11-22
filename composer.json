@@ -33,7 +33,6 @@
                 "AdiechaHK\\HerokuHelper\\Providers\\HerokuHelperServiceProvider"
             ],
             "aliases": {
-                // "Debugbar": "Barryvdh\\Debugbar\\Facade"
             }
         }
     }
